@@ -8,7 +8,7 @@ A script that looks at a messy folder full of mixed file types and automatically
 
 1. Points to a target folder (in this case, a Desktop folder full of mixed files)
 2. Lists everything currently inside that folder using `os.listdir()`
-3. Defines the destination folders it needs: `csv\\\\\\\_files`, `code\\\\\\\_files`, `png\\\\\\\_files`, `jpg\\\\\\\_files`, `text\\\\\\\_files`
+3. Defines the destination folders it needs: `csv_files`, `code_files`, `png_files`, `jpg_files`, `text_files`
 4. Creates any of those folders that don't already exist yet, using `os.makedirs()`
 5. Loops through every file in the folder and checks its extension
 6. Uses `shutil.move()` to move each file into its matching folder, based on a simple `if`/`elif` chain checking the file extension
@@ -27,7 +27,7 @@ Rather than sorting files by hand or writing one giant nested condition, this br
 
 ## How to run it
 
-Run `automatic\\\_file\\\_sorter.py` and enter your messy folder's path.
+Run `automatic_file_sorter.py` and enter your messy folder's path.
 
 \*\*Note:\*\* This script moves real files on your system. Test it on a sample/dummy folder first before pointing it at anything important.
 
